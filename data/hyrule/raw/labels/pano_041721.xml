@@ -1,0 +1,23 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_041721.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-90-beaubien</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2980</xmin>
+            <ymin>788</ymin>
+            <xmax>3030</xmax>
+            <ymax>840</ymax>
+        </bndbox>
+    </object>
+</annotation>

@@ -1,0 +1,23 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_044319.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-beaubien</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2300</xmin>
+            <ymin>414</ymin>
+            <xmax>2400</xmax>
+            <ymax>490</ymax>
+        </bndbox>
+    </object>
+</annotation>

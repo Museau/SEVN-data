@@ -1,0 +1,23 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_199013.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-7082-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3286</xmin>
+            <ymin>993</ymin>
+            <xmax>3322</xmax>
+            <ymax>1013</ymax>
+        </bndbox>
+    </object>
+</annotation>

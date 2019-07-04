@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_263885.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1790</xmin>
+            <ymin>572</ymin>
+            <xmax>1860</xmax>
+            <ymax>633</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-jean_talon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1716</xmin>
+            <ymin>486</ymin>
+            <xmax>1847</xmax>
+            <ymax>544</ymax>
+        </bndbox>
+    </object>
+</annotation>

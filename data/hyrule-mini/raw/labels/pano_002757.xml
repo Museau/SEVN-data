@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_002757.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-95-saint_zotique</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>2308</x1>
+            <y1>1307</y1>
+            <x2>2429</x2>
+            <y2>1375</y2>
+            <x3>2474</x3>
+            <y3>825</y3>
+            <x4>2326</x4>
+            <y4>844</y4>
+        </polygon>
+        <bndbox>
+            <xmin>2308</xmin>
+            <ymin>825</ymin>
+            <xmax>2474</xmax>
+            <ymax>1375</ymax>
+        </bndbox>
+    </object>
+</annotation>

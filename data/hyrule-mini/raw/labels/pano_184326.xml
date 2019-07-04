@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_184326.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-6765-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>3050</x1>
+            <y1>815</y1>
+            <x2>3189</x2>
+            <y2>839</y2>
+            <x3>3169</x3>
+            <y3>1175</y3>
+            <x4>3023</x4>
+            <y4>1190</y4>
+        </polygon>
+        <bndbox>
+            <xmin>3023</xmin>
+            <ymin>815</ymin>
+            <xmax>3189</xmax>
+            <ymax>1190</ymax>
+        </bndbox>
+    </object>
+</annotation>

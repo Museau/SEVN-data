@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_164700.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-mozart</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>311</xmin>
+            <ymin>585</ymin>
+            <xmax>394</xmax>
+            <ymax>638</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-6914-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2195</xmin>
+            <ymin>653</ymin>
+            <xmax>2244</xmax>
+            <ymax>700</ymax>
+        </bndbox>
+    </object>
+</annotation>

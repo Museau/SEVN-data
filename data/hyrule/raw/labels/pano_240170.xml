@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_240170.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-61-mozart</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2562</xmin>
+            <ymin>840</ymin>
+            <xmax>2601</xmax>
+            <ymax>864</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-57-mozart</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3414</xmin>
+            <ymin>979</ymin>
+            <xmax>3440</xmax>
+            <ymax>1012</ymax>
+        </bndbox>
+    </object>
+</annotation>

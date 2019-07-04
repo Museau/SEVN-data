@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_115686.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-6516-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>3161</x1>
+            <y1>1307</y1>
+            <x2>2566</x2>
+            <y2>1281</y2>
+            <x3>2601</x3>
+            <y3>815</y3>
+            <x4>3183</x4>
+            <y4>850</y4>
+        </polygon>
+        <bndbox>
+            <xmin>2566</xmin>
+            <ymin>815</ymin>
+            <xmax>3183</xmax>
+            <ymax>1307</ymax>
+        </bndbox>
+    </object>
+</annotation>

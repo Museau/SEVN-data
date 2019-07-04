@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_264189.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-70-jean_talon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>2484</x1>
+            <y1>1219</y1>
+            <x2>2623</x2>
+            <y2>1260</y2>
+            <x3>2665</x3>
+            <y3>737</y3>
+            <x4>2515</x4>
+            <y4>750</y4>
+        </polygon>
+        <bndbox>
+            <xmin>2484</xmin>
+            <ymin>737</ymin>
+            <xmax>2665</xmax>
+            <ymax>1260</ymax>
+        </bndbox>
+    </object>
+</annotation>

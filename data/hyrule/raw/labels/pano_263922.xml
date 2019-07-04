@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_263922.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-jean_talon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>740</xmin>
+            <ymin>284</ymin>
+            <xmax>1040</xmax>
+            <ymax>349</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-90-jean_talon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2501</xmin>
+            <ymin>707</ymin>
+            <xmax>2566</xmax>
+            <ymax>752</ymax>
+        </bndbox>
+    </object>
+</annotation>

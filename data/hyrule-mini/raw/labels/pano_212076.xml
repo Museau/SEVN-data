@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_212076.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-jean_talon</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>161</xmin>
+            <ymin>656</ymin>
+            <xmax>243</xmax>
+            <ymax>699</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>173</xmin>
+            <ymin>698</ymin>
+            <xmax>272</xmax>
+            <ymax>723</ymax>
+        </bndbox>
+    </object>
+</annotation>

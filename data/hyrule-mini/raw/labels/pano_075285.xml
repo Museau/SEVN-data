@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_075285.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-saint_zotique</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2237</xmin>
+            <ymin>554</ymin>
+            <xmax>2331</xmax>
+            <ymax>616</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2037</xmin>
+            <ymin>595</ymin>
+            <xmax>2151</xmax>
+            <ymax>630</ymax>
+        </bndbox>
+    </object>
+</annotation>

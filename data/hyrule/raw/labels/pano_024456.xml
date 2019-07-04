@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_024456.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-saint_zotique</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1834</xmin>
+            <ymin>622</ymin>
+            <xmax>1937</xmax>
+            <ymax>676</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-6660-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2293</xmin>
+            <ymin>986</ymin>
+            <xmax>2339</xmax>
+            <ymax>1014</ymax>
+        </bndbox>
+    </object>
+</annotation>

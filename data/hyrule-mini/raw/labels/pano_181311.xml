@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_181311.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-saint_zotique</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1521</xmin>
+            <ymin>471</ymin>
+            <xmax>1635</xmax>
+            <ymax>534</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-6702-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3390</xmin>
+            <ymin>895</ymin>
+            <xmax>3450</xmax>
+            <ymax>937</ymax>
+        </bndbox>
+    </object>
+</annotation>

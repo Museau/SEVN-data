@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_241758.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-62-mozart</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>2581</x1>
+            <y1>1019</y1>
+            <x2>2681</x2>
+            <y2>1039</y2>
+            <x3>2716</x3>
+            <y3>746</y3>
+            <x4>2612</x4>
+            <y4>739</y4>
+        </polygon>
+        <bndbox>
+            <xmin>2581</xmin>
+            <ymin>739</ymin>
+            <xmax>2716</xmax>
+            <ymax>1039</ymax>
+        </bndbox>
+    </object>
+</annotation>

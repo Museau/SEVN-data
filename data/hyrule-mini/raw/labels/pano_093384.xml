@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_093384.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-6765-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2469</xmin>
+            <ymin>828</ymin>
+            <xmax>2512</xmax>
+            <ymax>853</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-6763-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2500</xmin>
+            <ymin>874</ymin>
+            <xmax>2544</xmax>
+            <ymax>899</ymax>
+        </bndbox>
+    </object>
+</annotation>

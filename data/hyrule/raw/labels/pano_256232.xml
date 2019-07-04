@@ -1,0 +1,33 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_256232.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>door-7110-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <polygon>
+            <x1>2565</x1>
+            <y1>1155</y1>
+            <x2>2707</x2>
+            <y2>1155</y2>
+            <x3>2709</x3>
+            <y3>851</y3>
+            <x4>2562</x4>
+            <y4>845</y4>
+        </polygon>
+        <bndbox>
+            <xmin>2562</xmin>
+            <ymin>845</ymin>
+            <xmax>2709</xmax>
+            <ymax>1155</ymax>
+        </bndbox>
+    </object>
+</annotation>

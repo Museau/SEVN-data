@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_244200.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-mozart</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>560</xmin>
+            <ymin>551</ymin>
+            <xmax>660</xmax>
+            <ymax>598</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>234</xmin>
+            <ymin>562</ymin>
+            <xmax>417</xmax>
+            <ymax>642</ymax>
+        </bndbox>
+    </object>
+</annotation>

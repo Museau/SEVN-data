@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_121554.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-6715-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3518</xmin>
+            <ymin>774</ymin>
+            <xmax>3590</xmax>
+            <ymax>834</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>house_number-6713-saint_laurent</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3666</xmin>
+            <ymin>842</ymin>
+            <xmax>3715</xmax>
+            <ymax>881</ymax>
+        </bndbox>
+    </object>
+</annotation>

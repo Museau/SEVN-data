@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_010215.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>street_sign-clark</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1567</xmin>
+            <ymin>446</ymin>
+            <xmax>1684</xmax>
+            <ymax>500</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-saint_zotique</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1515</xmin>
+            <ymin>342</ymin>
+            <xmax>1843</xmax>
+            <ymax>411</ymax>
+        </bndbox>
+    </object>
+</annotation>

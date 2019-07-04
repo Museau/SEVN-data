@@ -1,0 +1,36 @@
+<annotation>
+    <folder>panos</folder>
+    <filename>pano_055923.png</filename>
+    <size>
+        <width>3840</width>
+        <height>1920</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>house_number-6666-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>2052</xmin>
+            <ymin>939</ymin>
+            <xmax>2220</xmax>
+            <ymax>997</ymax>
+        </bndbox>
+    </object>
+    <object>
+        <name>street_sign-saint_urbain</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <occluded>0</occluded>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>3656</xmin>
+            <ymin>880</ymin>
+            <xmax>3720</xmax>
+            <ymax>898</ymax>
+        </bndbox>
+    </object>
+</annotation>
