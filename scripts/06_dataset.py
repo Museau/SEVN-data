@@ -224,7 +224,7 @@ def cleanup_graph(coords_df, is_mini_hyrule):
                  (6096, 4489), (6096, 4896), (5754, 6171), (5754, 6170), (6170, 6171), (6179, 6059), \
                  (5715, 6040), (6178, 6177), (6045, 6210), (6177, 6210), (6177, 6044), (5954, 5480), \
                  (5359, 3176), (5359, 4711), (5359, 3177), (5456, 3188), (5456, 3187), (3186, 3248), \
-                 (5456, 3186)]
+                 (5456, 3186), (161, 163)]
 
     if is_mini_hyrule:
         node_blacklist.extend([x for x in range(877, 879)])
@@ -235,6 +235,7 @@ def cleanup_graph(coords_df, is_mini_hyrule):
         node_blacklist.extend([x for x in range(3661, 3669)])
         node_blacklist.extend([x for x in range(780, 784)])
         box = (24, 76, -125, 10)
+        coords_df = coords_df[((coords_df.x > box[0]) & (coords_df.x < box[1]) & (coords_df.y > box[2]) & (coords_df.y < box[3]))]
     return coords_df, node_blacklist, edge_blacklist, add_edges
 
 def clean_positions(G, coords_df):
@@ -314,7 +315,7 @@ def create_dataset(data_path="/data/hyrule/", do_images=True, do_graph=True, do_
         meta_df.sort_index(inplace=True)
         meta_df.to_hdf(data_path + "processed/meta.hdf5", key="df", index=False)
     else:
-        meta_df = pd.read_hdf(data_path + "processed/meta_df.hdf5", key="df", index=False)
+        meta_df = pd.read_hdf(data_path + "processed/meta.hdf5", key="df", index=False)
         G = nx.read_gpickle(data_path + "processed/graph.pkl")
 
     # Get png names and apply limit
