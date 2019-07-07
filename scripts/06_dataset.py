@@ -289,7 +289,7 @@ def label_segments(coords_df):
         coords_df.loc[intersection.index] = intersection
     return coords_df
 
-def create_dataset(data_path="/data/ssevn/", do_images=True, do_graph=True, do_plot=False, limit=None, is_mini=False):
+def create_dataset(data_path="/data/SEVN/", do_images=True, do_graph=True, do_plot=False, limit=None, is_mini=False):
     """
     Loads in the pano images from disk, crops them, resizes them, and writes them to disk.
     Then pre-processes the pose data associated with the image and calls the fn to create the graph and to process the labels
@@ -329,4 +329,4 @@ def create_dataset(data_path="/data/ssevn/", do_images=True, do_graph=True, do_p
         pickle.dump(images, f)
         f.close()
 
-create_dataset(data_path="/data/ssevn/", do_images=False, do_graph=True, do_plot=True, is_mini=False)
+create_dataset(data_path="/data/SEVN/", do_images=False, do_graph=True, do_plot=True, is_mini=False)
