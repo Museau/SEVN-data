@@ -1,5 +1,3 @@
-"""Stitch panoramas"""
-
 import os
 from shutil import copyfile
 import networkx as nx

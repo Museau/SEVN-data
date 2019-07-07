@@ -71,10 +71,10 @@ def process_labels(paths):
         label_df.at[matched_doors.area.idxmax(), "is_goal"] = True
     return label_df
 
-def construct_spatial_graph(coords_df, is_mini_hyrule, do_plot):
+def construct_spatial_graph(coords_df, is_mini, do_plot):
     """ Filter the pano coordinates by spatial relation and write the filtered graph to disk"""
 
-    coords_df, node_blacklist, edge_blacklist, add_edges = cleanup_graph(coords_df, is_mini_hyrule)
+    coords_df, node_blacklist, edge_blacklist, add_edges = cleanup_graph(coords_df, is_mini)
     coords_df = coords_df[~coords_df.index.isin(node_blacklist)]
 
     # Init graph
@@ -145,7 +145,7 @@ def process_images(paths):
     images = {frame: img for frame, img in zip(frames, thumbnails)}
     return images
 
-def cleanup_graph(coords_df, is_mini_hyrule):
+def cleanup_graph(coords_df, is_mini):
     node_blacklist = [0, 928, 929, 930, 931, 1138, 6038, 6039, 5721, 5722, 6091, 6090, \
                       6082, 6197, 6088, 4809, 5964, 5504, 5505, 5467, 5514, 174,    \
                       188, 189, 190, 2390, 2391, 2392, 2393, 1862, 1863, 1512, 1821, 4227,\
@@ -226,7 +226,7 @@ def cleanup_graph(coords_df, is_mini_hyrule):
                  (5359, 3176), (5359, 4711), (5359, 3177), (5456, 3188), (5456, 3187), (3186, 3248), \
                  (5456, 3186), (161, 163)]
 
-    if is_mini_hyrule:
+    if is_mini:
         node_blacklist.extend([x for x in range(877, 879)])
         node_blacklist.extend([x for x in range(52, 56)])
         node_blacklist.extend([x for x in range(31, 39)])
@@ -289,7 +289,7 @@ def label_segments(coords_df):
         coords_df.loc[intersection.index] = intersection
     return coords_df
 
-def create_dataset(data_path="/data/hyrule/", do_images=True, do_graph=True, do_plot=False, limit=None, is_mini_hyrule=False):
+def create_dataset(data_path="/data/ssevn/", do_images=True, do_graph=True, do_plot=False, limit=None, is_mini=False):
     """
     Loads in the pano images from disk, crops them, resizes them, and writes them to disk.
     Then pre-processes the pose data associated with the image and calls the fn to create the graph and to process the labels
@@ -302,7 +302,7 @@ def create_dataset(data_path="/data/hyrule/", do_images=True, do_graph=True, do_
         else:
             coords = np.load(data_path + "processed/pos_ang.npy")
         coords_df = pd.DataFrame({"x": coords[:, 2], "y": coords[:, 3], "z": coords[:, 4], "angle": coords[:, -1], "timestamp": coords[:, 1], "frame": [int(x) for x in coords[:, 1]*30]})
-        G, coords_df = construct_spatial_graph(coords_df, is_mini_hyrule, do_plot)
+        G, coords_df = construct_spatial_graph(coords_df, is_mini, do_plot)
         nx.write_gpickle(G, data_path + "processed/graph.pkl")
         label_paths = [data_path + "raw/labels/pano_" + str(frame).zfill(6) + ".xml" for frame in coords_df["frame"].tolist()]
         label_paths = [path for path in label_paths if os.path.isfile(path)]
@@ -329,4 +329,4 @@ def create_dataset(data_path="/data/hyrule/", do_images=True, do_graph=True, do_
         pickle.dump(images, f)
         f.close()
 
-create_dataset(data_path="/data/hyrule/", do_images=False, do_graph=True, do_plot=True, is_mini_hyrule=False)
+create_dataset(data_path="/data/ssevn/", do_images=False, do_graph=True, do_plot=True, is_mini=False)

@@ -1,4 +1,4 @@
-*.gz
+data/ssevn/processed/*.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
