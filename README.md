@@ -2,6 +2,8 @@
 
 Data pre-processing for SEVN: Sidewalk Simulator Environment for Visual Navigation. This takes raw 360 degree video as an input. The camera used was the Vuze+.
 
+![pipeline.png](pipeline.png)
+
 ## Requirements
 
 In order to install requirements, follow:
@@ -18,3 +20,5 @@ pip install -r requirements.txt
 4. In our case, we split the run into smaller reconstructions and stitch them together. (scripts/04_stitch_reconstructions.py)
 5. Filter panoramas. (scripts/filter_panos.py)
 6. Construct dataset and load it into the [SEVN-gym environment](https://github.com/mweiss17/SEVN) (scripts/06_dataset.py)
+
+![slam.png](slam.png)
