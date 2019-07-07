@@ -2,6 +2,23 @@
 
 Data pre-processing for SEVN: Sidewalk Simulator Environment for Visual Navigation. This takes raw 360 degree video as an input. The camera used was the Vuze+.
 
+## Requirements
+
+In order to install requirements, follow:
+
+```bash
+# PyTorch
+conda install pytorch torchvision -c soumith
+
+# Baselines for Atari preprocessing
+git clone https://github.com/openai/baselines.git
+cd baselines
+pip install -e .
+
+# Other requirements
+pip install -r requirements.txt
+```
+
 ## Pre-processing steps
 
 1. Extract 30 FPS frames from the raw video, crop them to get each camera's images separately and undistort the front-facing view. (scripts/01_preprocess_for_slam.sh)

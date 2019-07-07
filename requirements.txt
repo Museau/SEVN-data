@@ -1,0 +1,8 @@
+numpy
+pandas
+numpy-quaternion
+matplotlib
+tqdm
+networkx
+opencv-python
+pyyaml
