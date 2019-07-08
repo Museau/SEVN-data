@@ -1,6 +1,6 @@
 # SEVN-data
 
-Data pre-processing for SEVN: Sidewalk Simulator Environment for Visual Navigation. This takes raw 360 degree video as an input. The camera used was the Vuze+.
+Data pre-processing for SEVN: Sidewalk Simulation Environment for Visual Navigation. This takes raw 360 degree video as an input. The camera used was the Vuze+.
 
 ![pipeline.png](pipeline.png)
 
