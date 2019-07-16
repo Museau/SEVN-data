@@ -7,6 +7,7 @@ from tqdm import tqdm
 import networkx as nx
 import pandas as pd
 import numpy as np
+import math
 import cv2
 import gzip
 import pickle
@@ -110,6 +111,7 @@ def construct_spatial_graph(coords_df, is_mini, do_plot):
             G.add_edge(n1, n2)
 
     G, coords_df = clean_positions(G, coords_df)
+    clean_edges(G, coords_df)
 
     if do_plot:
         pos = {k: v.get("coords")[0:2] for k, v in G.nodes(data=True)}
@@ -152,7 +154,7 @@ def cleanup_graph(coords_df, is_mini):
                       1874, 3894, 3895, 3896, 3897, 3898, 2887, 608, 3025, 3090, 3013, 3090, \
                       780, 781, 162, 1822, 1725, 1726, 1513, 3875, 4842, 4870, 4907, 4717, \
                       6214, 6215, 5965, 5966, 4715, 3362, 5358, 3419, 5457, 5458, 3418]
-    node_blacklist.extend([x for x in range(1330, 1346)])
+    node_blacklist.extend([x for x in range(1330, 1348)])
     node_blacklist.extend([x for x in range(3034, 3071)])
     node_blacklist.extend([x for x in range(879, 892)])
     node_blacklist.extend([x for x in range(2971, 2983)])
@@ -206,7 +208,7 @@ def cleanup_graph(coords_df, is_mini):
                       (1534, 1536), (1511, 1724), (191, 137), (50, 172), (612, 782), (1135, 1714),   \
                       (109, 107), (1875, 1824), (1771, 1875), (4843, 4845), (4849, 4847),            \
                       (4860, 4862), (4861, 4863), (4909, 4813), (4910, 4908), (4506, 4897),          \
-                      (4502, 4897), (5754, 5756), (5758, 5756)]
+                      (4502, 4897), (5754, 5756), (5758, 5756), (4909, 4810), (1132, 1134)]
     add_edges = [(902,1329), (893, 894), (894, 895), (651, 2970), (638, 2983), (637, 2983), 		 \
                  (2637, 3098), (2629, 3088), (2954, 3026), (3077, 3078), (3109, 3110), (2948, 2607), \
                  (0, 1722), (6161, 6162), (6147, 6146), (6172, 6173), (6174, 6175), (4465, 4906),    \
@@ -264,6 +266,43 @@ def clean_positions(G, coords_df):
                 pass
 
     return G, coords_df
+
+def clean_edges(G, coords_df):
+    edges = []
+    for n1, v in G.nodes(data=True):
+        for n2 in [edge[1] for edge in list(G.edges(n1))]:
+            if not edge_is_usable(G, n1, n2):
+                edges.append((n1, n2))
+    if len(edges) > 0:
+        print("------------\nSome edges will not be used by the agent")
+        print(edges)
+        print("------------")
+
+def edge_is_usable(G, n1, n2):
+    neighbors = [edge[1] for edge in list(G.edges(n1))]
+    neighbor_angles = []
+    for neighbor in neighbors:
+        neighbor_angles.append(get_angle_between_nodes(G, n1, neighbor))
+    usable_edges = []
+
+    for direction in [x*22.5 for x in range(-8, 8)]:
+        angles = smallest_angles(direction, neighbor_angles)
+        min_angle_node = neighbors[angles.index(min(angles))]
+        if min(angles) < 22.5: usable_edges.append((n1, min_angle_node))
+    return (n1, n2) in usable_edges
+
+def get_angle_between_nodes(G, n1, n2):
+    x = G.nodes[n2]['coords'][0] - G.nodes[n1]['coords'][0]
+    y = G.nodes[n2]['coords'][1] - G.nodes[n1]['coords'][1]
+    angle = (math.atan2(y, x) * 180 / np.pi)
+    return angle
+
+def smallest_angles(a1, a2):
+    angles = []
+    for a in a2:
+        angle = a - a1
+        angles.append(np.abs((angle + 180) % 360 - 180))
+    return angles
 
 def label_segments(coords_df):
     coords_df["type"] = None
