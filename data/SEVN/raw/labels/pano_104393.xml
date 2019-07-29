@@ -31,7 +31,7 @@
         </bndbox>
     </object>
     <object>
-        <name>street_sign-saint_zotique</name>
+        <name>street_sign-clark</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <occluded>0</occluded>

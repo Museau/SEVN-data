@@ -8,7 +8,7 @@
     </size>
     <segmented>0</segmented>
     <object>
-        <name>door-54-mozart</name>
+        <name>door-56-mozart</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <occluded>0</occluded>
@@ -31,7 +31,7 @@
         </bndbox>
     </object>
     <object>
-        <name>house_number-54-mozart</name>
+        <name>house_number-56-mozart</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <occluded>0</occluded>

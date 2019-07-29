@@ -54,7 +54,7 @@
         </bndbox>
     </object>
     <object>
-        <name>house_number-6816-mozart</name>
+        <name>street_sign-mozart</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <occluded>0</occluded>

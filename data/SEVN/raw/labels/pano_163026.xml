@@ -8,7 +8,7 @@
     </size>
     <segmented>0</segmented>
     <object>
-        <name>street_sign-mozart_o</name>
+        <name>street_sign-mozart</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <occluded>0</occluded>
