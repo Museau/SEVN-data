@@ -29,8 +29,8 @@ def parse_args():
                         type=str,
                         help='''Output directory containg the .csv file with
                                 the stitched camera positions.''')
-    parser.add_argument('--plot',
-                        action='store_false',
+    parser.add_argument('--do_plot',
+                        action='store_true',
                         help='Plot poses.')
     args = parser.parse_args()
     return args
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     poses = stitch(poses, reconstructions['17'], 1.0, 1.0, 181.5, -3.0, -2.0)
     poses = stitch(poses, reconstructions['18'], 1.2, 0.95, 82.0, 0.0, 0.0)
 
-    if args.plot:
+    if args.do_plot:
         # Plot poses.
         figure_fname = os.path.join(output_dir, 'poses.png')
         print('figure_fname: {}'.format(figure_fname))
