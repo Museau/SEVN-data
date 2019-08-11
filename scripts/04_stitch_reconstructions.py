@@ -166,7 +166,7 @@ def stitch(poses1, poses2, scale_x, scale_y, angle, x, y):
     return reconstruction
 
 
-def plot_data(x, y, z, l):
+def plot_data(x, y, l, fname):
     '''
     Plot poses.
 
@@ -176,19 +176,19 @@ def plot_data(x, y, z, l):
         List of x.
     y: list
         List of y.
-    z: list
-        List of z.
     l: int
         # of poses.
+    fname: str
+        File name.
 
     '''
     plt.scatter(x[0:l], y[0:l], c='blue')
     plt.scatter(x[l:-1], y[l:-1], c='red')
     plt.axis('equal')
-    plt.savefig(os.path.join(output_dir, 'poses.png'))
+    plt.savefig(fname)
 
 
-def plot_poses(poses, l):
+def plot_poses(poses, l, fname):
     '''
     Plot poses.
 
@@ -198,16 +198,16 @@ def plot_poses(poses, l):
         List of poses.
     l: int
         # of poses.
+    fname: str
+        File name.
 
     '''
     x = []
     y = []
-    z = []
     for pose in poses:
         x.append(pose.t[0])
         y.append(pose.t[1])
-        z.append(pose.t[2])
-    plot_data(x, y, z, l)
+    plot_data(x, y, l, fname)
 
 
 if __name__ == '__main__':
@@ -253,7 +253,9 @@ if __name__ == '__main__':
 
     if args.plot:
         # Plot poses.
-        plot_poses(poses, len(poses))
+        figure_fname = os.path.join(output_dir, 'poses.png')
+        print('figure_fname: {}'.format(figure_fname))
+        plot_poses(poses, len(poses), figure_fname)
 
     # Constuct pandas dataframe with the stitched camera positions.
     res = []
@@ -262,7 +264,6 @@ if __name__ == '__main__':
                     pose.t[0], pose.t[1], pose.t[2],
                     pose.angle))
     res = pd.DataFrame(res, columns=['timestamp', 'x', 'y', 'z', 'angle'])
-    print(res)
     # Save output.
     print('output fname: {}'.format(os.path.join(output_dir, 'coords.csv')))
     res.to_csv(os.path.join(output_dir, 'coords.csv'))
