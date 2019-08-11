@@ -5,12 +5,12 @@ Data pre-processing for SEVN (Sidewalk Simulation Environment for Visual Navigat
 
 ## Requirements
 
-[FFmpeg](https://ffmpeg.org/)
-[Hugin](http://hugin.sourceforge.net/)
-[Imagemagick](https://imagemagick.org/index.php)
+- [FFmpeg](https://ffmpeg.org/)
+- [Hugin](http://hugin.sourceforge.net/)
+- [Imagemagick](https://imagemagick.org/index.php)
 
 ### Create a conda environment
-conda env create -f conda-env/requirements.yml
+`conda env create -f conda-env/requirements.yml`
 
 
 ## Data collection pipeline
